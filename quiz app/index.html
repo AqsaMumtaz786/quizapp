@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="body">
+      <div class="box" id="quiz-container">
+        <h1 id="quesbox">1.This is first quiz</h1>
+        <hr>
+        <br>
+        <div class="radios">
+          <input id="option1" class="option" type="radio" name="option" value="a"/>
+          <label for="option1"  class="back"> your answer is this </label>
+        </div>
+        <div class="radios">
+          <input id="option2" class="option" type="radio" name="option" value="b"/>
+          <label for="option2" >your answer is this </label>
+        </div>
+        <div class="radios">
+          <input id="option3" class="option" type="radio" name="option" value="c"/>
+          <label for="option3" >your answer is this </label>
+        </div>
+        <div class="radios">
+          <input id="option4"  class="option" type="radio" name="option" value="d"/>
+          <label for="option4"> your answer is this </label>
+        </div>
+        <button class="btn-1" onclick="getanswer()">Submit</button>
+      </div>
+      <div id="end-message" style="display:none;">
+        <h1>Thank you for your quiz!</h1>
+        <p>Your Score: <span id="user-score"></span>/<span id="total-score"></span></p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
